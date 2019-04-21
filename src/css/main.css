@@ -1,4 +1,3 @@
-
 /* Global Site Configuration */
 body {
     background-color: rgb(255, 255, 255);
@@ -21,17 +20,32 @@ body {
 /* Page header */
 
 .header {
-    margin: 0;
-    display: block;
-    min-height: 50px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    min-height: 2.5vw;
+
     background: black;
     color: white;
-    padding-left: 2%;
 }
 
 .header .logo {
+    margin-top: 0.2vw;
+    padding-left: 2vw;
     font-size: 30px;
     font-family: 'Montserrat', sans-serif;
+}
+
+.header .contact {
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    justify-content: flex-start;
+    list-style: none;
+}
+
+.header .contact li {
+    display: block;
+    margin-left: 1em;
 }
 
 /* Navigation bar */
@@ -55,6 +69,7 @@ body {
     padding: 1em;
     background-color: #003AB8;
     text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .navigation a:hover {
@@ -68,10 +83,28 @@ body {
         /* On medium devices, such as tablets & laptops, we'll centre the items and evenly distribute them. */
         justify-content: space-around
     }
+
+    .header .site-sections{
+        /* On medium devices, such as tablets & laptops, we'll centre the items and evenly distribute them. */
+        justify-content: space-around
+    }
+
+    .header .logo {
+        font-size: 20px;
+    }
+    
+    .header .contact {
+        display: none;
+    }
 }
 
 @media all and (max-width: 500px) {
     .navigation {
+        /* On small devices, such as mobile phones, we'll place them in a column. */
+        flex-direction: column;
+    }
+
+    .header .site-sections{
         /* On small devices, such as mobile phones, we'll place them in a column. */
         flex-direction: column;
     }
