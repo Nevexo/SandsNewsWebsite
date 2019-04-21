@@ -1,6 +1,7 @@
+
 /* Global Site Configuration */
 body {
-    background-color: tomato;
+    background-color: rgb(255, 255, 255);
     padding: 0;
     margin: 0;
 }
@@ -17,6 +18,22 @@ body {
     padding-left: 10px;
 }
 
+/* Page header */
+
+.header {
+    margin: 0;
+    display: block;
+    min-height: 50px;
+    background: black;
+    color: white;
+    padding-left: 2%;
+}
+
+.header .logo {
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+}
+
 /* Navigation bar */
 
 .navigation {
@@ -25,7 +42,7 @@ body {
     display: flex;
     flex-flow: row wrap;
     /* Set some nice styling */
-    background: black;
+    background: #003b9f;
     list-style: none;
 
     justify-content: flex-end;
@@ -36,12 +53,12 @@ body {
     color: white;
     display: block;
     padding: 1em;
-    background-color: blueviolet;
+    background-color: #003AB8;
     text-decoration: none;
 }
 
 .navigation a:hover {
-    background: darkred;
+    background: #1C25F9;
 }
 
 /* Configure the navigation bar for screen sizes */
