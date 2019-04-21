@@ -1,0 +1,12 @@
+{
+    "name": "Bolton-Le-Sands Post Office (Sands News)",
+    "short_name": "Sands News",
+    "site_author": "Sands News Post Office",
+    "address": "28 Main Rd, Bolton-le-Sands, Carnforth LA5 8DL",
+    "hours": {
+        "Weekdays": "8:30am - 5:30pm",
+        "Saturday": "8:30am - 12:30pm",
+        "Sunday": "Closed"
+    },
+    "phone": "01524 822435"
+}
